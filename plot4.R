@@ -10,9 +10,9 @@ data$datetime <- as.POSIXct(data$datetime, format = "%d/%m/%Y %H:%M:%S")
 
 initial <- par()
 
-png("ExData_Plotting1/plot4.png", bg = "transparent")
+png("ExData_Plotting1/plot4.png", bg = "transparent", )
 
-par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,2,2,0)) # viktigt att par()-ändringar sker medan png-device är öppet, annars syns bara sista gjorde grafen
+par(mfrow=c(2,2), mar=c(5.1,4.1,4.1,2.1), oma=c(0,2,0,0)) # viktigt att par()-ändringar sker medan png-device är öppet, annars syns bara sista gjorde grafen
 
 with(data,
      {plot(Global_active_power ~ datetime, ylab = "Global Active Power", xlab = "", type = "l")
