@@ -16,3 +16,4 @@ with(data, lines(Sub_metering_3 ~ datetime, col = "blue"))
 legend("topright", col = c("black", "red", "blue"), lty = c(1, 1, 1), legend = colnames(data[,7:9]))
 
 dev.off()
+
